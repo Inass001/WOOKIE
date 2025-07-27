@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wookie: Track mood & sleep, discover patterns, and boost productivity. Your secret weapon for daily balance. Try free today!">
+  <title>WOOKIE</title>
+   <link rel="icon" href="../img/logo-wookie.png" type="image/png">
+  <link rel="stylesheet" href="../css/stylemood.css">
+  <link rel="stylesheet" href="../css/colors.css">
+</head>
+<body>
+  <div class="main-page">
+      <div class="top-bare">
+        <a href="index.html" class="home-link"> Home 🐻 </a>
+      </div>
+      <fieldset class="sidebare">
+                <div class="average-mood">
+                <p style="font-size: 18px;font-weight:600">Average Mood</p>
+                <fieldset class="mood">
+                  <p style="font-size: 18px;font-weight:600" class="a-mood"></p>
+                  <p class="msgAverageMood"></p>
+                </fieldset>
+            </div>
+
+            <div class="average-sleep">
+                  <p style="font-size: 18px;font-weight:600">Average Sleep</p>
+                  <fieldset class="sleep" >
+                      <p style="font-size: 18px;font-weight:600" class="a-sleep">6-8 Hours</p>
+                      <p class="msgAverageSleep"></p>
+                  </fieldset>
+            </div>
+
+          <div class="sleep-today">
+               <p style="font-size: 18px;font-weight:600"> Sleep Hours Today</p> 
+               <fieldset class="hours">
+                  <p class="hoursfield">6-8 hours</p>
+               </fieldset>
+                
+          </div>
+      </fieldset>
+
+      <fieldset class="moodtoday"> 
+         <div class="todolist-flex">
+                <fieldset class="todolist">
+                    <input type="text" placeholder="&nbsp;&nbsp;write something ..." class="todolist-input">
+                    <button class="save-input">save</button>
+                    <br><br>
+                    <div class="todolist-area">
+                        <input type="checkbox" name="1" id="1" class="input-check">
+                        <button class="delete">❌</button>
+                        <label for="1">read Quran</label>
+                    </div>
+                </fieldset> 
+                <div class="statics-container-flex">
+                </div>
+                 <div class="feeling-container-flex">
+                  <div class="feeling">
+                    <div class="imogie-container">
+                    </div>
+                </div>
+                 </div>
+                
+               
+          </div>
+          <div class="feeling-container">
+               <div class="feeling">
+                    <div class="imogie-container">
+                    </div>
+                    <div class="statics-container">
+                  </div>
+               </div>  
+          </div> 
+      </fieldset>
+    </div>
+</body>
+<script src="../javascript/data.js" type="module"></script>
+<script src="../javascript/mood.js" type="module"></script>
+</html>

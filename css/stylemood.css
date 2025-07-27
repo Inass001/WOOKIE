@@ -1,0 +1,367 @@
+body{
+   background: linear-gradient( to bottom,rgb(255, 255, 255),rgb(210, 210, 245));
+   background-repeat: no-repeat;
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+    color: rgb(11, 11, 135);
+
+}
+.main-page{
+  display: grid;
+  grid-template-columns:auto 30vw 50vw auto;
+  grid-template-rows: 10vh  86vh 4vh;
+   /*display:flex;
+   flex-direction: column;*/
+ }
+.top-bare{
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+.home-link {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: rgba(135, 165, 237, 0.926); /* soft blue (neutral) */
+  color: rgb(11, 11, 135);                      /* your base font color */
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 2px 2px 10px rgba(199, 199, 251, 0.8); /* your box-shadow */
+  transition: all 0.2s ease-in-out;
+}
+
+.home-link:hover {
+  background-color: rgb(149, 211, 149);  /* happy-color */
+  color: rgb(0, 60, 100);
+  transform: scale(1.07);
+}
+
+.sidebare{
+  grid-column:2/3;
+  grid-row: 2/3;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+  margin-right: 20px;
+}
+.moodtoday{
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  /*display:flex;
+   flex-direction: column;*/
+  background-color: white;
+}
+.todolist{
+  box-shadow: 3px 3px 15px   rgba(135, 165, 237, 0.926);;
+  margin: 10px 5px;
+  height: 79vh;
+  overflow-y: auto;    /* Shows scrollbar only when needed */
+  max-height: 79vh;    /* Keeps your existing height limit */
+  
+  /* Optional styling to make scrollbar pretty */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: rgba(135, 165, 237, 0.926) white; /* For Firefox */
+}
+/* For Chrome/Safari */
+.todolist::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.todolist::-webkit-scrollbar-track {
+  background: white; /* Color of the track */
+}
+
+.todolist::-webkit-scrollbar-thumb {
+  background: rgba(135, 165, 237, 0.926); /* Color of the scrollbar */
+  border-radius: 4px; /* Rounded corners */
+}
+.todolist-area {
+  width: 100%;
+  word-wrap: break-word;
+}
+
+/* Improve the todo item layout */
+.todo-item-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.todo-text {
+  flex: 1;
+  margin-left: 10px;
+  word-break: break-word;
+  white-space: normal;
+  max-width: calc(100% - 60px); /* Prevent overflow */
+}
+
+/* Modify your existing .work class to be more specific */
+.todolist-area .work {
+  display: inline-block;
+  max-width: 90%;
+  word-break: break-word;
+  white-space: normal;
+  vertical-align: middle;}
+.todolist-input,.message{
+  box-shadow: 4px 4px 20px rgb(199, 199, 251);
+  border: none;
+  height: 40px;
+  width: 70%;
+  border-radius: 10px;
+}
+.feeling{
+  display: grid;
+  grid-template-rows: 40% 10% 50%;
+  /*grid-template-rows: 35% 5% 60%;*/
+}
+.statics-container{
+  grid-row: 3/4;
+ height: 50%;
+  margin: auto;
+  margin-left:1vw;
+  width: 2px;}
+  .statics{
+  background-color:  rgba(135, 165, 237, 0.926);;
+  padding: 15px;
+  border-radius: 8px;
+  width: 2px;
+ 
+}
+.imogie-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 180px auto;
+  margin-left: 5px;
+ margin-top: 10px;
+}
+.imogie-photo{
+  width:10vw;
+  height: 10vw;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  
+}
+.feeling-text{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: center;
+  color: rgb(11, 11, 135);
+  font-weight: 700;
+  font-size: 2vw;
+}
+.msg{
+  color: rgb(11, 11, 135);
+  font-weight: 500;
+  font-size: 1.2vw;
+  margin: 3vw;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+ 
+
+.main-page fieldset{
+  border-radius: 8px;
+  border: none;
+}
+.mood{
+  background-color: rgba(135, 165, 237, 0.926);
+  box-shadow: 4px 4px 20px rgb(210, 210, 245);
+  border: none;
+  height: 130px;
+}
+.sleep{
+  background-color: rgba(26, 7, 235, 0.685);
+  color: white;
+  box-shadow: 4px 4px 20px rgb(210, 210, 245);
+  border: none;
+  height: 120px;
+}
+button{
+  padding: 10px 2vh;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: rgba(26, 7, 235, 0.685);
+
+}
+button:hover{
+  background-color: rgba(197, 7, 235, 0.463); ;
+}
+.save-input{
+  background-color:  rgba(135, 165, 237, 0.926);
+  box-shadow: 3px 3px 15px   rgba(135, 165, 237, 0.926);
+}
+.message{
+  height:10vh;
+}
+.hours{
+ box-shadow: 4px 4px 20px rgb(199, 199, 251);
+  border: none;
+  height: auto;
+  width: 24vw;
+  border-radius: 10px;
+}
+.input-check{
+  transform: scale(1.5);
+}
+.delete{
+  padding: 4px 2px 0 2px;
+  width: 20px;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+.delete:hover{
+  background-color: white;
+}
+
+
+.progress-tracker {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.progress-metrics {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.metric-box {
+  flex: 1;
+  padding: 2px;
+}
+
+.metric-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.metric-label {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.progress-bar-container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  background: white;
+  height: 100%;
+  border-radius: 10px;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+.temp-input{
+ box-shadow: 3px 3px 15px   rgba(135, 165, 237, 0.926);;}
+ .message{
+ width: 100%;
+ height: 100%;
+ }
+
+
+@media (max-width:1000px) {
+ .main-page{
+   display:flex;
+   flex-direction: column;
+   
+ }
+ .sleep,.mood{
+  width:250px;
+   height: 150px;
+   margin: auto;
+ }
+ .hoursfield,.temp-input{
+  width:250px;
+  height: 20px;
+ }
+.sidebare{
+  margin-right: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.moodtoday{
+    display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.feeling{
+    display: flex;
+    flex-direction: column;
+}
+.todolist{
+  background-color: white;
+  min-height: 200px;
+  min-width: 250px;
+  width: 75vw;
+  max-width: 700px;
+  margin: auto;
+  height: auto;
+}
+.sidebare,.feeling,.moodtoday{
+  border-radius: 0;
+  background-color: transparent;
+  margin:auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.imogie-photo{
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+}
+.feeling-text{
+  font-size: 20px;
+   margin: 50px auto;
+}
+.msg{
+  font-size: 10px;
+  margin-top: 10px;
+}
+.sleep{
+  width:250px;
+ }
+ .mood{
+ width:250px;
+ }
+.todolist-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.statics{
+  margin: auto;
+  height: 150px;
+}
+.statics-container-flex{
+  width: auto;
+  margin: auto;
+  margin-top:20px;
+}
+.imogie-container{
+}
+
+}
+
+.work {
+  word-break: break-word;
+  white-space: normal;
+}

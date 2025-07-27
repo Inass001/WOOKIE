@@ -1,0 +1,63 @@
+
+
+
+.hours0-2{
+  margin-top: 250px;
+}
+.hours2-4{
+   margin-top: 200px;
+}
+.hours4-6{
+   margin-top: 150px;
+}
+.hours6-8{
+  margin-top: 100px;
+}
+.hoursb-8{
+  margin-top:50px ;
+}
+.very-happy-color{
+  background-color: rgb(234, 234, 28);
+   box-shadow: 4px 4px 20px rgb(199, 199, 251);
+}
+.happy-color{
+  background-color: rgb(149, 211, 149);;
+     box-shadow: 4px 4px 20px rgb(199, 199, 251);
+}
+.neutral-color{
+  background-color:  rgba(135, 165, 237, 0.926);;
+     box-shadow: 4px 4px 20px rgb(199, 199, 251);
+}
+.sad-color{
+  background-color: rgba(26, 7, 235, 0.685);;
+     box-shadow: 4px 4px 20px rgb(199, 199, 251);
+}
+.very-sad-color{
+  background-color: rgb(239, 88, 88);
+     box-shadow: 4px 4px 20px rgb(199, 199, 251);
+}
+/* Complete Mood Shadows */
+.very-happy-shadow {
+  box-shadow: 3px 3px 15px rgb(234, 234, 28);
+}
+
+.happy-shadow {
+  box-shadow: 3px 3px 15px rgb(149, 211, 149);
+}
+
+.neutral-shadow {
+  box-shadow: 3px 3px 15px rgba(135, 165, 237, 0.926);
+}
+
+.sad-shadow {
+  box-shadow: 3px 3px 15px rgba(26, 7, 235, 0.685);
+}
+
+.very-sad-shadow {
+  box-shadow: 3px 3px 15px rgb(239, 88, 88);
+}
+.forbidden{
+  cursor: not-allowed;
+  display: none; 
+}
+

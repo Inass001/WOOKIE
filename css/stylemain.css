@@ -1,0 +1,397 @@
+body{
+   background: linear-gradient( to bottom,rgb(255, 255, 255),rgb(210, 210, 245));
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   color: rgb(11, 11, 135);
+}
+.main-page{
+  display: grid;
+  grid-template-columns:auto 30vw 56vw auto;
+  grid-template-rows: 10vh 32vh 56vh 2vh;
+   /*display:flex;
+   flex-direction: column;*/
+ }
+.top-bare {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 5vw 100px auto 70px 5vw; /* adjust spacing */
+  align-items: center;
+  padding-top: 10px;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  grid-column: 2/3;
+}
+
+/*profile-image*/
+.profile-wrapper {
+  margin-top: 10px;
+  height: 70px;
+  width: 70px;
+  grid-column: 4/5;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   border: none ;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 2px 2px 10px rgb(210, 210, 245);
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.profile-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.profile-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+#profile-image {
+  display: none;
+}
+/**************NAME*************/
+.name{
+  grid-column: 4/5; 
+}
+.name-input{
+ width: 80px;
+ margin-top: 5px ;
+ text-align: center;
+ border: none;
+ background-color: transparent;
+ font-size: smaller;
+ color:  rgb(16, 78, 224);
+}
+.name-input:focus{
+  border: none;
+  outline: none;
+}
+.text{
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  text-align: center;
+  width: 100vw;
+}
+.sidebare{
+  grid-column:2/3;
+  grid-row: 3/4;
+  height: 56vh;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+     margin-right: 20px;
+}
+.trends{
+  grid-column: 3/4;
+  grid-row: 3/4;
+  height: auto;
+  background-color: white;
+}
+.trends-container{
+  width:95%;
+  margin: auto;
+  padding: 2px 10px;
+  border-radius: 10px;
+  height:340px;
+  display: flex;
+  box-shadow: 4px 4px 20px rgb(210, 210, 245);
+  background-color: white;
+}
+.sleep-hours p{
+  margin-right:15px;
+  margin-top: 35px;
+  width: 90px;
+}
+.days{
+  grid-row: 2/3;
+  display:grid;
+  grid-template-columns: 80px 80px 80px 80px 80px 80px 80px;
+  overflow-y: hidden;    /* Shows scrollbar only when needed */
+   /* Optional styling to make scrollbar pretty */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: rgba(135, 165, 237, 0.926) white; /* For Firefox */
+}
+.days p{
+  font-size: 80%;
+}
+
+
+.main-page fieldset{
+  border-radius: 8px;
+  border: none;
+}
+.mood{
+  background-color: rgba(135, 165, 237, 0.926);
+  box-shadow: 4px 4px 20px rgb(210, 210, 245);
+  border: none;
+  height: 130px;
+}
+.sleep{
+  background-color: rgba(26, 7, 235, 0.685);
+  color: white;
+  box-shadow: 4px 4px 20px rgb(210, 210, 245);
+  border: none;
+  height: 120px;
+}
+button{
+  padding: 10px 2vh;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: rgba(26, 7, 235, 0.685);
+  cursor: pointer;
+
+}
+button:hover{
+  background-color: rgba(7, 45, 235, 0.463) ;
+}
+
+.feel{
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: rgb(11, 11, 135);
+  font-weight: 700;
+  font-size: 4vh;
+}
+.hello{
+  color:blue;
+  font-size: 3vh;
+}
+
+/***********************log in chart************************/
+.main-page-2{
+  background-color:transparent;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 50vw auto;
+  grid-template-rows: 8vh auto;
+}
+.main-page-absolute{
+position: absolute;
+  top:0;
+  right: 0;
+}
+.displaychange{
+    display: none;
+}
+/*---mode bare*/
+.log-container{
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+}
+.log{
+   max-width: 500px;
+   margin: auto;
+   padding: 20px;
+   background-color: white;
+  box-shadow: 4px 4px 20px rgb(210, 210, 245);
+  border: none;
+}
+.main-page-2 fieldset{
+  border: auto;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 17.5px;
+  box-shadow: 4px 4px 20px rgb(210, 210, 245);
+  border: none;
+}
+.photo{
+ height: 25px;
+ width: 25px; 
+  margin-right: 50%;
+}
+
+.main-page-2 fieldset:hover{
+border: 2px solid rgba(26, 7, 235, 0.685);
+}
+input{
+  transform: scale(1.5);
+}
+
+label{
+    font-size: 17px;
+}
+.turn-bare{
+ display: grid;
+ grid-template-columns: 32% 32% 32%;
+ column-gap: 2%;
+}
+.turn-bare div{
+  padding: 3px ;
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(210, 210, 245, 0.504);
+}
+.continue1{
+  width: 100%;
+  padding: 17.5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.continue2,.comeback2,.comeback3,.save{
+  width: 45%;
+  padding: 17.5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.comeback2,.comeback3{
+  margin-right: 5%;
+}
+/*second bare-> sleep time---*/
+.log-container2{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  }
+
+/*third bare*/
+.log-container3{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  }
+
+.main-page-flex{
+display: flex;
+flex-direction: column;
+}
+.side-bare-flex{
+  margin-right: 0px;
+}
+/*---------------imogies clases ----------------*/
+.days div{
+  display: grid;
+  grid-template-rows: 300px 10px auto ;
+}
+.days div fieldset{
+ width: 20px;
+ grid-row: 1/2;
+ position: relative;
+ border-radius: 20px;
+}
+.days div a{
+  grid-row: 3/4;
+  font-size: 10px;
+}
+
+/*final message display*/
+/* Mood Container */
+        .mood-container {
+            width: auto;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 15px 0;
+            position: relative;
+            overflow: hidden;
+            background-color: white;
+        }
+
+  /* Hilal-style Message */
+        .mood-message {
+            font-size:20px;
+            font-weight: bold;
+            margin: 20px 0;
+            position: relative;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        .mood-message span {
+            position: absolute;
+            opacity: 0;
+            animation: hilalReveal 3s forwards;
+            padding: 10px;
+        }
+
+        @keyframes hilalReveal {
+            0% {
+                opacity: 0;
+                transform: scale(0.7) rotate(-10deg);
+                clip-path: polygon(0 0, 30% 0, 30% 100%, 0% 100%);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+
+   /* GIF Container */
+        .mood-gif {
+            width: 100%;
+            height: 100%;
+            max-width: 200px;
+            max-height: 250px;;
+            margin: 10px auto;
+            margin-top: 80px;
+            overflow: hidden;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .mood-gif img {
+              width:100%;
+              height:100%;
+            object-fit: cover;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        /* Audio Player (hidden but autoplays) */
+        .mood-audio {
+            display: none;
+        }
+
+@media (max-width:500px) {
+ .mood-message {
+  font-size: 80%;
+ } 
+}
+
+
+@media (max-width:1000px) {
+ .main-page{
+   display:flex;
+   flex-direction: column;
+ }
+ .sleep,.mood{
+  width:250px;
+   height: 150px;
+ }
+.sidebare,.trends{
+  border-radius: 0;
+  background-color: transparent;
+  margin: auto;
+  height: auto;
+}
+.trends-container{
+  width: 90vw;
+  margin: auto;
+}
+.sidebare{
+  display: flex;
+  flex-direction: row;
+   justify-content: space-around;
+  flex-wrap: wrap;
+}
+}
+
